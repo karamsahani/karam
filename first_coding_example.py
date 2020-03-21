@@ -1,14 +1,4 @@
 #math arithmetic simple operations: + - / *
-x = 5
-y = 6
-z = x + y
-print(z)
-#eponential/ power
-z = x ** 2
-print(z)
-#shortcuts +=, *= etc
-x += 5 # x = (x + 5) 
-print(x)
 '''
 for( int i = 0; i < 10 ; i++)
 {
@@ -16,7 +6,7 @@ for( int i = 0; i < 10 ; i++)
 }
 '''
 #for loop in python:
-for i in range(1,11):
+for i in range(0,10):#TAKES NUMBERS FROM 0 TO 9
 	print(i)
 '''
 if(something){
@@ -37,5 +27,4 @@ elif 6 != 6:
 else:
 	print("boom")
 
-#while loop
-while 
+ 
