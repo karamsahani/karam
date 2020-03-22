@@ -18,23 +18,18 @@ x = p(5,5)
 print(p(x,x)) 
 
 def is_prime(n):
-<<<<<<< HEAD
 	if n == 1:
 		return False #once you return, method stops
-	for i in range(2,n):
-=======
 	if n == 2:
 		return True #once you return, method stops
 	for i in range(2,n):
 		print("for loop ran")
->>>>>>> master
 		if n % i == 0:
 			return False
 	return True
 
 def print_100_primes():
 	for i in range(2,101):
-<<<<<<< HEAD
 		if not is_prime (i):
 			print (i)
 		
@@ -47,7 +42,3 @@ def square_100():
 	for i in range (0,101):
 		print (square(i))
 square_100()
-
-=======
-		
->>>>>>> master
