@@ -10,6 +10,13 @@ def print_100_prime():
 	for j in range (1,101):
 		if is_prime(j):
 			print (j)
+	'''
+	j=1
+	while(j<101):
+		if is_prime(j):
+			print (j)
+		j = j + 1 #j+=1
+	'''
 print_100_prime() 
 
 def is_even(n):
@@ -20,3 +27,13 @@ def print_100_even():
 		if is_even(i): 
 			print (i)
 print_100_even()
+
+def print_first_100_primes():
+	count = 0
+	i=1
+	while(count < 100):
+		if is_prime(i):
+			print(i)
+			count+=1
+		i+=1
+print_first_100_primes()
