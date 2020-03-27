@@ -19,13 +19,23 @@ def pronic(n): #find if a no. is pronic number
 print (pronic(6))
 
 def leap_year(n):
-	if n % 4 == 0:
+	if n % 400 == 0:
+		print("Its a leap year!")
+	elif n % 100 == 0 :
+		print("Try again!")
+	elif n % 4 == 0:
 		print("Its a leap year!")
 	else:
 		print("Try again!")
-print (leap_year(2988)) #why is it showing none as well?
+leap_year(2988)
 
 def math(n,m):
-	a = n + m
-	return a #how to make use of another formula under one fumction?
-print (math(8,3))
+	a = n - m
+	b = n + m
+	return a, b
+ans1 , ans2 = math(8,3)
+def print_each_digit(n):
+	while(n > 0):
+		print(n%10)
+		n = n // 10
+
