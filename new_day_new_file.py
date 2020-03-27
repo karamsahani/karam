@@ -38,3 +38,12 @@ def print_each_digit(n):
 	while(n > 0):
 		print(n%10)
 		n = n // 10
+
+def is_disarium(n):
+	copy_n = n
+	sum = 0 
+	while(n > 0):
+		sum += (n % 10) ** len(str(n))
+		n = n // 10
+	return sum == copy_n 
+is_disarium(89)
