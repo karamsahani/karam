@@ -38,3 +38,9 @@ def print_each_digit(n):
 	while(n > 0):
 		print(n%10)
 		n = n // 10
+def print_forward(n):
+	if n==0:
+		return
+	print_forward(n//10)
+	print(n%10)
+print_forward(326)
