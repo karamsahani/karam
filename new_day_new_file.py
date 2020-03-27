@@ -38,21 +38,37 @@ def print_each_digit(n):
 	while(n > 0):
 		print(n%10)
 		n = n // 10
-<<<<<<< HEAD
+
 
 def is_disarium(n):
 	copy_n = n
-	sum = 0 
-	while(n > 0):
-		sum += (n % 10) ** len(str(n))
+	sum = 0
+	while(n>0):
+		sum+= (n%10) ** len(str(n))
 		n = n // 10
-	return sum == copy_n 
-is_disarium(89)
-=======
-def print_forward(n):
+	return sum == copy_n
+def print_forward1(n):
 	if n==0:
 		return
-	print_forward(n//10)
+	print_forward1(n//10)
 	print(n%10)
-print_forward(326)
->>>>>>> master
+print_forward1(326)
+def print_forward_2(n):
+	s = str(n)
+	for i in range(0,len(s)): #i takes value of each character in s "326"
+		print(s[i])
+print_forward_2(326)
+
+def is_dis_helper(n, c):
+	if n == 0:
+		return 0
+	return (n%10)**c + is_dis_helper(n//10, c-1)
+def is_dis(n):
+	return is_dis_helper(n,len(str(n))) == n
+#5! = 5*4*3*2*1
+is_dis(88)
+
+def factorial(n):
+	if n == 0:
+		return 1
+	return n * factorial(n-1)
